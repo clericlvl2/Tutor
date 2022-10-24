@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>BEM Start</title>
+</head>
+<body>
+<header>
+  <h1>Что такое БЭМ</h1>
+</header>
+<main>
+  <section>
+    <h1>БЭМ</h1>
+    <p>БЭМ — блок, элемент, модификатор. Упорядоченная система именования классов.</p>
+    <p>Блок — логический и смысловой блок сайта</p>
+    <p>Элемент — неотъемлимая часть блока</p>
+    <p>Модификатор — небольшое изменения в зависимости от места применения</p>
+  </section>
+  <section class="example-bem">
+    <h1 class="example-bem__title">Примеры БЭМ</h1>
+    <div class="example-bem__container">
+      <div class="example-bem__container-item">
+        <h2 class="example-bem__subtitle">Блок</h2>
+        <ul class="example-bem__list">
+          <li class="example-bem__list-item">gallery</li>
+          <li class="example-bem__list-item">profile</li>
+          <li class="example-bem__list-item">card</li>
+          <li class="example-bem__list-item">popup-window</li>
+        </ul>
+      </div>
+      <div class="example-bem__container-item example-bem__container-item_type_special">
+        <h2 class="example-bem__subtitle">Блок</h2>
+        <ul class="example-bem__list">
+          <li class="example-bem__list-item">gallery</li>
+          <li class="example-bem__list-item">profile</li>
+          <li class="example-bem__list-item">card</li>
+          <li class="example-bem__list-item">popup-window</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Элемент</h2>
+        <ul>
+          <li>gallery__list</li>
+          <li>gallery__item</li>
+          <li>profile__pic</li>
+          <li>card__title</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Модификатор</h2>
+        <ul>
+          <li>gallery__item_landscape_nature</li>
+          <li>profile__pic_size_large</li>
+          <li>card__btn_active</li>
+          <li>card_theme_dark card_theme_light card_theme_sub-dark</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>Теперь ты знаешь что такое БЭМ</p>
+</footer>
+</body>
+</html>
